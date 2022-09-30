@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,400;1,500&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #000;
+}
+* {
+  font-family: "Besley", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.2s linear all;
+}
+*::selection {
+  background: #dc3445;
+  color: #000;
+}
+Body.Dark {
+  --white: #000;
+  --black: #fff;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+  height: 100vh;
+  width: 100%;
+  background: var(--white);
+}
+h1 {
+  font-size: 6vw;
+  color: var(--black);
+}
+#toggle {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  line-height: 59px;
+  background: var(--black);
+  color: var(--white);
+  font-size: 35px;
+  cursor: pointer;
+  text-align: center;
+  position: fixed;
+  top: 20px;
+  right: 30px;
+}
+#toggle.fa-moon {
+  transform: rotate(360deg);
+}
